@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_pipeline_sinistres",
+  "source_file": "PROJET-SAS.sas",
+  "source_blob_sha": "90ef301c59c6c3ec97646f54258d7fde3520f765",
+  "source_commit": "49591b604c5eba26aa016ee525f6bbe4d843d681",
+  "notes": "Full insurance-claims pipeline: CSV import + text->numeric/date conversion, BRANCHE (Prevoyance/Dommages), ID_SIN via cats/mod/put z2./z4., provisions (PROV_SINISTRE_NETTE), S/C ratio by branche (PROC MEANS) and garantie (PROC SUMMARY), TOP_SIN heavy-claims sort, provisions total by branche, cout moyen, PROC SQL drop, anciennete via intck, and final PROC FREQ cross-tab. Only change vs upstream: the external SAS-Studio CSV path (/home/u64423420/sasuser.v94/...) is replaced by an inline datalines block of 20 pedagogical rows with the same 7 semicolon-delimited columns and same firstobs=2 header handling; all DATA/PROC logic is byte-identical to the author's."
+}
