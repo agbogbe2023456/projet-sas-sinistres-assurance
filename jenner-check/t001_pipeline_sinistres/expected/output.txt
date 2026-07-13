@@ -1,0 +1,102 @@
+                                Statistiques descriptives - Vérification qualité données                                
+
+                                                  The MEANS Procedure
+
+ Variable              N   N Miss              Minimum              Maximum                 Mean
+ -----------------------------------------------------------------------------------------------
+ ID_ASSURE            20        0     10012345.0000000     10201234.0000000     10109999.5000000
+ DATE_SIN             20        0           01/06/2018           09/09/2025        22658.3000000
+ COUT_SIN             20        0          300.0000000         6100.0000000         2882.5000000
+ REC_SIN              20        0            0.0000000          900.0000000          352.5000000
+ PMT_SIN              20        0          300.0000000         3000.0000000         1482.5000000
+ PRIME_ANNUELLE       20        0          350.0000000         1520.0000000          859.0000000
+ -----------------------------------------------------------------------------------------------
+
+                                Statistiques descriptives - Vérification qualité données                                
+
+                                                   The FREQ Procedure
+
+                                      Cumulative    Cumulative
+GARANTIE    Frequency    Percent     Frequency      Percent
+-----------------------------------------------------------------
+A                   1      5.00            1         5.00
+B                   1      5.00            2        10.00
+C                   1      5.00            3        15.00
+E                   1      5.00            4        20.00
+F                   1      5.00            5        25.00
+H                   1      5.00            6        30.00
+J                   1      5.00            7        35.00
+K                   1      5.00            8        40.00
+M                   1      5.00            9        45.00
+N                   1      5.00           10        50.00
+P                   1      5.00           11        55.00
+Q                   1      5.00           12        60.00
+R                   1      5.00           13        65.00
+S                   1      5.00           14        70.00
+T                   1      5.00           15        75.00
+U                   1      5.00           16        80.00
+V                   1      5.00           17        85.00
+X                   1      5.00           18        90.00
+Y                   1      5.00           19        95.00
+Z                   1      5.00           20       100.00
+                                Statistiques descriptives - Vérification qualité données                                
+
+                                                  The MEANS Procedure
+
+                                              Analysis Variable : SIN_COT
+
+        BRANCHE                     N Obs           Mean        Std Dev        Minimum        Maximum
+        ---------------------------------------------------------------------------------------------
+        Dommages aux biens              9      3.1658092      1.0346952      0.8571429      4.0131579
+        Prévoyance                     11      2.9477708      0.9261956      1.4634146      3.8518519
+        ---------------------------------------------------------------------------------------------
+
+                                              Ratio moyen S/C par garantie                                              
+
+GARANTIE      MEAN_S_C
+A         3.7647058824
+B         2.6666666667
+C         2.9032258065
+E         3.3333333333
+F         3.7272727273
+H         1.7592592593
+J         3.7634408602
+K         3.5256410256
+M         1.4634146341
+N         1.6666666667
+P         3.8518518519
+Q         3.8383838384
+R         2.2321428571
+S         3.6440677966
+T             3.671875
+U         2.8358208955
+V         0.8571428571
+X         3.5802469136
+Y         3.8194444444
+Z         4.0131578947
+
+                                TOP_SIN : Sinistres avec charge > 2500€ (sans centimes)                                 
+
+GARANTIE   ID_SIN  COUT_SIN
+Z         24Z4567      6100
+Y         24Y1234      5500
+P         19P8901      5200
+T         21T1234      4700
+S         21S9012      4300
+F         22F4567      4100
+Q         18Q9012      3800
+J         18J7890      3500
+A         20A2345      3200
+X         23X3456      2900
+K         24K6789      2750
+
+                                TOP_SIN : Sinistres avec charge > 2500€ (sans centimes)                                 
+
+                       Synthèse finale : Nombre de sinistres par branche et tranche d'ancienneté                        
+
+           BRANCHE     TRANCHE_ANC  COUNT  PERCENT
+Dommages aux biens  4 ans et plus       6       30
+Dommages aux biens  Moins de 4 ans      3       15
+Prévoyance          4 ans et plus       7       35
+Prévoyance          Moins de 4 ans      4       20
+

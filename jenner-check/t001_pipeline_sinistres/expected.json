@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-13T07:05:00Z",
+  "_captured_run_id": "r_c00a970e3b8849178fe77d89156a075e",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote TABLE_SAS_BRUTE (20 rows, 7 columns).",
+    "NOTE: Wrote TABLE_SAS_ID (20 rows, 14 columns).",
+    "NOTE: Table TOP_SIN has been dropped.",
+    "NOTE: Output dataset SYNTHESE_FINALE_SINISTRES has 4 observations and 4 variables.",
+    "NOTE: PROC PRINT completed: 11 observations printed, 3 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

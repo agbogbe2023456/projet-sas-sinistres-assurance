@@ -1,0 +1,105 @@
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA TABLE_SAS_BRUTE
+
+NOTE: Processing inline DATALINES (21 lines)
+
+NOTE: Read 20 rows from DATALINES.
+NOTE: Wrote TABLE_SAS_BRUTE (20 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA TABLE_SAS_CLEAN
+
+
+NOTE: Read 20 rows from TABLE_SAS_BRUTE.
+NOTE: Wrote TABLE_SAS_CLEAN (20 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: PROC MEANS statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_garantie.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA TABLE_SAS_B
+
+
+NOTE: Read 20 rows from TABLE_SAS_CLEAN.
+NOTE: Wrote TABLE_SAS_B (20 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA TABLE_SAS_ID
+
+
+NOTE: Read 20 rows from TABLE_SAS_B.
+NOTE: Wrote TABLE_SAS_ID (20 rows, 14 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA TABLE_SAS_PR
+
+
+NOTE: Read 20 rows from TABLE_SAS_ID.
+NOTE: Wrote TABLE_SAS_PR (20 rows, 16 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA TABLE_SAS_SIN_COT
+
+
+NOTE: Read 20 rows from TABLE_SAS_PR.
+NOTE: Wrote TABLE_SAS_SIN_COT (20 rows, 17 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC MEANS
+NOTE: Output dataset stats_sin_cot_branche has 3 observations and 4 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset stats_sin_cot_garantie has 20 observations and 2 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC PRINT data=stats_sin_cot_garantie
+
+NOTE: PROC PRINT completed: 20 observations printed, 2 variables
+NOTE: DATA TOP_SIN
+
+
+NOTE: Read 20 rows from TABLE_SAS_SIN_COT.
+NOTE: Wrote TOP_SIN (11 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=TOP_SIN
+
+NOTE: Read 11 rows from TOP_SIN.
+NOTE: Wrote TOP_SIN_TRIE (11 rows, 3 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=TOP_SIN_TRIE
+
+NOTE: PROC PRINT completed: 11 observations printed, 3 variables
+NOTE: PROC MEANS
+NOTE: Output dataset PROV_PAR_BRANCHE has 2 observations and 2 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC MEANS
+NOTE: Output dataset SIN_COUTS_MOYENS has 20 observations and 2 variables.
+NOTE: PROC MEANS statement used.
+NOTE: PROC SQL 
+
+NOTE: Table TOP_SIN has been dropped.
+NOTE: PROC SQL statement used.
+NOTE: DATA ANCIENNETE_SINISTRES
+
+
+NOTE: Read 20 rows from TABLE_SAS_SIN_COT.
+NOTE: Wrote ANCIENNETE_SINISTRES (20 rows, 20 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset SYNTHESE_FINALE_SINISTRES has 4 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC PRINT data=SYNTHESE_FINALE_SINISTRES
+
+NOTE: PROC PRINT completed: 4 observations printed, 4 variables
